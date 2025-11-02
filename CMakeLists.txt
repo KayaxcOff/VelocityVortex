@@ -6,13 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Find SDL2
 find_package(SDL2 REQUIRED)
-include_directories(${SDL2_INCLUDE_DIRS})
 
 # Find Box2D
 find_package(box2d REQUIRED)
-
-# Include directories
-include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Source files
 set(SOURCES
@@ -23,6 +19,12 @@ set(SOURCES
 
 # Create executable
 add_executable(VelocityVortex ${SOURCES})
+
+# Include directories
+target_include_directories(VelocityVortex PRIVATE 
+    ${CMAKE_SOURCE_DIR}/include
+    ${SDL2_INCLUDE_DIRS}
+)
 
 # Link libraries
 target_link_libraries(VelocityVortex ${SDL2_LIBRARIES} box2d)

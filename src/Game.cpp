@@ -67,11 +67,12 @@ void Game::run() {
         }
 
         handleEvents();
-        update(deltaTime);
-        render();
-
+        
         // Step the Box2D world
         world->Step(TIME_STEP, VELOCITY_ITERATIONS, POSITION_ITERATIONS);
+        
+        update(deltaTime);
+        render();
 
         // Cap frame rate at 60 FPS
         SDL_Delay(16);
