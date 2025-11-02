@@ -1,0 +1,52 @@
+.main-pane {
+    -fx-background-color: #121212;
+}
+
+.main-pane:hover {
+    -fx-background-color: #1E1E1E;
+}
+
+.buttons-pane {
+    -fx-background-color: #0B3D2E;
+    -fx-border-color: #3C1361;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(60, 19, 97, 0.3), 10, 0, 0, 0);
+}
+
+.buttons-pane:hover {
+    -fx-background-color: #1A2A40;
+    -fx-border-color: #5A189A;
+    -fx-effect: dropshadow(three-pass-box, rgba(90, 24, 154, 0.5), 15, 0, 0, 0);
+}
+
+.launcher-buttons {
+    -fx-background-color: #121212;
+    -fx-text-fill: #7A1C1C;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 8 16;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-color: #3C1361;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(60, 19, 97, 0.4), 5, 0, 0, 0);
+
+}
+
+.launcher-buttons:hover {
+    -fx-background-color: #7A1C1C;
+    -fx-text-fill: #FFFFFF;
+}
+
+.launcher-buttons:pressed {
+    -fx-background-color: #2A2A2A;
+    -fx-effect: none;
+}
+
+.launcher-labels {
+    -fx-text-fill: #7A1C1C;
+}
